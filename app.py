@@ -16,7 +16,6 @@ engine = create_engine(str(settings.SQLALCHEMY_DATABASE_URI))
 def create_db_and_tables():
     SQLModel.metadata.create_all(engine)
 
-
 app = FastAPI()
 
 
